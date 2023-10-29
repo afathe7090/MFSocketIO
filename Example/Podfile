@@ -7,6 +7,6 @@ target 'Example' do
 
   # Pods for Example
 
-pod 'MFSocketIO' , path => '../MFSocketIO'
+pod 'MFSocketIO'
 
 end
