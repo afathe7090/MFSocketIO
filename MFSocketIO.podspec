@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MFSocketIO"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "MFSocketIO is socket module that handle some coneection with socket."
   spec.description  = "MFSocketIO is socket module that handle Chat & Location Driver. with maree and will need it to support another framework."
   spec.homepage     = "https://github.com/afathe7090/MFSocketIO"
