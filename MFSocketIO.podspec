@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Ahmed Fathy" => "afathe7090" }
   spec.platform     = :ios, "13.0"
   spec.source       = { :git => "https://github.com/afathe7090/MFSocketIO.git", :tag => spec.version.to_s }
-  spec.source_files   = "Sources/MFSocketIO"
+  spec.source_files   = "Sources/MFSocketIO/**/*.{swift}"
   spec.swift_versions = "5.9"
 
 end
