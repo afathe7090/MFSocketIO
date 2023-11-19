@@ -24,7 +24,7 @@ final public class LocationSocketService {
     /// - Parameters:
     ///   - captainLocation: updated data need to mapped form your model
     ///   - event: channel name of sevice updated
-    public  func sendCaptainLocation(
+    public func sendCaptainLocation(
         captainLocation: CaptainTripLocation,
         with event: ServerConnectionEvent = UpdateLocationConnectionEvent()
     ) {
@@ -36,7 +36,7 @@ final public class LocationSocketService {
     /// - Parameters:
     ///   - event: Broadcast name of event that subscribe for it
     ///   - completion: Driver CallBack Location
-    public  func listenCaptainLocation(
+    public func listenCaptainLocation(
         from event: ServerConnectionEvent = DriverLocationConnectionEvent(),
         completion: @escaping CaptainCallBack
     ) {

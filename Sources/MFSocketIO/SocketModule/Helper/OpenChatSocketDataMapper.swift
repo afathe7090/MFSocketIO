@@ -8,7 +8,7 @@
 struct OpenChatSocketDataMapper {
     static func map(_ connectChat: OpenChatSocketData) -> [String:Any] {
         [
-            "userid": connectChat.userId,
+            "user_id": connectChat.userId,
             "user_type": connectChat.userType,
             "room_id": connectChat.roomID
         ]

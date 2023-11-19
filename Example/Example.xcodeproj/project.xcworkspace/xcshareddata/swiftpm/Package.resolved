@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mfsocketio",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/afathe7090/MFSocketIO.git",
+      "state" : {
+        "revision" : "0d02b200bda99f8789a35e7f3c657e3f2f5c1b26",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}
