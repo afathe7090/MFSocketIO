@@ -8,7 +8,7 @@
 import Foundation
 
 public struct ReceiveMessageConnectionEvent: ServerConnectionEvent {
-    public var event: String { "sendMessageReq" }
+    public var event: String { "sendMessageRes" }
     public init() {}
 }
 

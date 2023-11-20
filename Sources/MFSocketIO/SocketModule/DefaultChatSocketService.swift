@@ -60,6 +60,14 @@ final public class DefaultChatSocketService: ChatSocketService {
             }
         }
     
+    public func subscribe(
+        on event: ServerConnectionEvent = ReceiveMessageConnectionEvent(),
+        onReceiveMessage: @escaping AnyMessage)  {
+            socket.on(event.event) { data, _ in
+                onReceiveMessage(data)
+            }
+        }
+    
     /// On Exit Chat Service
     /// - Parameter event: event server listener
     public func leave(
@@ -79,8 +87,7 @@ final public class DefaultChatSocketService: ChatSocketService {
 
 private extension [Any] {
     var messageMapper: MessageData? {
-        guard let json = self[0] as? [String: Any] else { return nil }
-        guard let dataSerial = try? JSONSerialization.data(withJSONObject: json) else { return nil }
-        return try? JSONDecoder().decode(MessageData.self, from: dataSerial)
+        guard let dataSerial = try? JSONSerialization.data(withJSONObject: self) else { return nil }
+        return try? JSONDecoder().decode([MessageData].self, from: dataSerial).first
     }
 }

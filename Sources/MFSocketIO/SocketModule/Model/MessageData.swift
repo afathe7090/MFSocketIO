@@ -9,10 +9,10 @@ import Foundation
 
 public struct MessageData: Codable {
     public let roomID, receiverID: Int
-    public let receiverType: String
+    public let receiverType: String?
     public let senderID: Int
     public let senderType, senderName: String
-    public let avatar: String
+    public let avatar: String?
     public let messageType, messageBody, createdAt: String
     
     public init(
